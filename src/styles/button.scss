@@ -1,0 +1,31 @@
+.button {
+  width: 166px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $primary-color;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding: 0;
+
+  transition:
+    background-color $transition,
+    color $transition,
+    border-color $transition;
+
+  &:hover {
+    border-color: $primary-color;
+    background-color: #fff;
+    color: $primary-color;
+  }
+}
