@@ -6,24 +6,45 @@ $muted-text-color: rgba(97, 96, 112, 1);
 $hover-title-color: #34568b;
 $nav-text-color: #333;
 $card-border-color: rgba(243, 243, 243, 1);
+$box-shadow-color: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 // Spacing
-$spacing-xs: 4px;
-$spacing-sm: 16px;
-$spacing-md: 40px;
-$spacing-lg: 50px;
+$base-spacing-xs: 4px;
+$base-spacing-sm: 16px;
+$base-spacing-md: 40px;
+$base-spacing-lg: 50px;
+$additional-spacing-xs: 19px;
+$additional-spacing-sm: 20px;
+$additional-spacing-md: 24px;
+$additional-spacing-lg: 32px;
+$reviews-spacing: 17px;
+
+// Grid gaps
+$grid-gap-y: 48px;
+$grid-gap-x: 46px;
+
+// Sizes
+$card-width: 200px;
+$card-image-width: 160px;
+$card-image-height: 134px;
+$active-indicator-height: 4px;
+$active-indicator-radius: 8px;
+$header-height: 60px;
+$logo-image-size: 40px;
+$button-width: 166px;
+$button-height: 40px;
 
 // Typography
 $font-family: 'Roboto', sans-serif;
 $font-size-sm: 10px;
 $font-size-md: 12px;
 $font-size-lg: 14px;
+$font-size-xl: 16px;
 $line-height-sm: 14px;
 $line-height-md: 18px;
 $line-height-header: 60px;
 
-// Layout
-$card-width: 200px;
+// Border sizes
 $border-radius: 5px;
 $border-width: 1px;
 
@@ -32,3 +53,7 @@ $transition: 0.3s ease;
 
 // Stars
 $star-size: 16px;
+
+// Content line
+$content-line-height: 4px;
+$content-line-border-radius: 8px;

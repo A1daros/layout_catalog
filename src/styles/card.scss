@@ -1,9 +1,9 @@
 .catalog {
   margin: 0 auto;
-  padding: $spacing-lg $spacing-md;
+  padding: $base-spacing-lg $base-spacing-md;
   display: grid;
   grid-template-columns: repeat(1, $card-width);
-  gap: 48px 46px;
+  gap: $grid-gap-y $grid-gap-x;
   justify-content: center;
 
   @media (min-width: 488px) {
@@ -16,6 +16,10 @@
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, $card-width);
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1200px;
   }
 }
 
@@ -36,21 +40,22 @@
   }
 
   &__image {
-    width: 160px;
-    height: 134px;
-    margin: 32px 19px $spacing-md;
+    width: $card-image-width;
+    height: $card-image-height;
+    margin: $additional-spacing-lg $additional-spacing-xs $base-spacing-md;
   }
 
   &__content {
-    padding: 0 $spacing-sm;
+    padding: 0 $base-spacing-sm;
   }
 
   &__title {
     font-size: $font-size-md;
     line-height: $line-height-md;
     font-weight: 500;
-    margin-bottom: $spacing-xs;
+    margin-bottom: $base-spacing-xs;
     color: $text-color;
+    transition: color $transition;
   }
 
   .card:hover .card__title {
@@ -62,14 +67,14 @@
     line-height: $line-height-sm;
     font-weight: 400;
     color: $muted-text-color;
-    margin-bottom: $spacing-sm;
+    margin-bottom: $base-spacing-sm;
   }
 
   &__stars-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: $additional-spacing-md;
   }
 
   &__reviews {
@@ -77,7 +82,7 @@
     line-height: $line-height-sm;
     font-weight: 400;
     color: $text-color;
-    margin-left: 17px;
+    margin-left: $reviews-spacing;
     align-self: flex-end;
   }
 
@@ -85,7 +90,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: $spacing-sm;
+    margin-bottom: $base-spacing-sm;
   }
 
   &__price-text {
@@ -96,7 +101,7 @@
   }
 
   &__price {
-    font-size: 16px;
+    font-size: $font-size-xl;
     line-height: $line-height-md;
     font-weight: 700;
     color: $text-color;

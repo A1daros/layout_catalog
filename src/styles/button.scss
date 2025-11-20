@@ -1,6 +1,6 @@
 .button {
-  width: 166px;
-  height: 40px;
+  width: $button-width;
+  height: $button-height;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,14 +8,14 @@
   background: $primary-color;
   color: $background-color;
   font-size: $font-size-lg;
-  line-height: 16px;
+  line-height: $font-size-xl;
   font-weight: 700;
   border: $border-width solid transparent;
   border-radius: $border-radius;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: $spacing-sm;
+  margin-bottom: $base-spacing-sm;
   padding: 0;
 
   transition:
@@ -25,7 +25,7 @@
 
   &:hover {
     border-color: $primary-color;
-    background-color: #fff;
+    background-color: $background-color;
     color: $primary-color;
   }
 }

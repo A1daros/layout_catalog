@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
 
     &:not(:last-child) {
-      margin-right: $spacing-xs;
+      margin-right: $base-spacing-xs;
     }
   }
 

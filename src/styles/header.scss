@@ -1,11 +1,11 @@
 .header {
   background: $background-color;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 60px;
+  box-shadow: $box-shadow-color;
+  height: $header-height;
 
   &__container {
     margin: 0 auto;
-    padding: 0 $spacing-lg;
+    padding: 0 $base-spacing-lg;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,8 +26,8 @@
   }
 
   &__logo-img {
-    width: 40px;
-    height: 40px;
+    width: $logo-image-size;
+    height: $logo-image-size;
     object-fit: contain;
     display: block;
   }
@@ -56,7 +56,7 @@
     position: relative;
 
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: $additional-spacing-sm;
     }
   }
 
@@ -84,9 +84,9 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        height: 4px;
+        height: $content-line-height;
         background: $primary-color;
-        border-radius: 8px;
+        border-radius: $content-line-border-radius;
       }
     }
   }
