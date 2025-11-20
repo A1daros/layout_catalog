@@ -6,20 +6,20 @@
   gap: $grid-gap-y $grid-gap-x;
   justify-content: center;
 
-  @media (min-width: 488px) {
+  @media (min-width: $breakpoint-sm) {
     grid-template-columns: repeat(2, $card-width);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-md) {
     grid-template-columns: repeat(3, $card-width);
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-lg) {
     grid-template-columns: repeat(4, $card-width);
   }
 
-  @media (min-width: 1200px) {
-    max-width: 1200px;
+  @media (min-width: $breakpoint-max) {
+    max-width: $breakpoint-max;
   }
 }
 
@@ -47,25 +47,26 @@
 
   &__content {
     padding: 0 $base-spacing-sm;
+    margin-bottom: $base-spacing-sm;
   }
 
   &__title {
     font-size: $font-size-md;
-    line-height: $line-height-md;
-    font-weight: 500;
+    line-height: $line-height-lg;
+    font-weight: $font-weight-medium;
     margin-bottom: $base-spacing-xs;
     color: $text-color;
     transition: color $transition;
   }
 
-  .card:hover .card__title {
+  &:hover .card__title {
     color: $hover-title-color;
   }
 
   &__code {
     font-size: $font-size-sm;
     line-height: $line-height-sm;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
     color: $muted-text-color;
     margin-bottom: $base-spacing-sm;
   }
@@ -80,7 +81,7 @@
   &__reviews {
     font-size: $font-size-sm;
     line-height: $line-height-sm;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
     color: $text-color;
     margin-left: $reviews-spacing;
     align-self: flex-end;
@@ -95,15 +96,15 @@
 
   &__price-text {
     font-size: $font-size-md;
-    line-height: $line-height-md;
-    font-weight: 400;
+    line-height: $line-height-lg;
+    font-weight: $font-weight-regular;
     color: $muted-text-color;
   }
 
   &__price {
     font-size: $font-size-xl;
-    line-height: $line-height-md;
-    font-weight: 700;
+    line-height: $line-height-lg;
+    font-weight: $font-weight-bold;
     color: $text-color;
   }
 }

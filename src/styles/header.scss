@@ -11,12 +11,12 @@
     justify-content: space-between;
     height: 100%;
 
-    @media (min-width: 1024px) {
-      max-width: 1024px;
+    @media (min-width: $breakpoint-lg) {
+      max-width: $breakpoint-lg;
     }
 
-    @media (min-width: 1200px) {
-      max-width: 1200px;
+    @media (min-width: $breakpoint-max) {
+      max-width: $breakpoint-max;
     }
   }
 
@@ -38,9 +38,8 @@
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  color: $nav-text-color;
   font-size: $font-size-md;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   text-transform: uppercase;
 
   &__list {
