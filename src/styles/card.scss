@@ -1,6 +1,6 @@
 .catalog {
   margin: 0 auto;
-  padding: 50px 40px;
+  padding: $spacing-lg $spacing-md;
   display: grid;
   grid-template-columns: repeat(1, $card-width);
   gap: 48px 46px;
@@ -21,7 +21,7 @@
 
 .card {
   width: $card-width;
-  border: 1px solid rgba(243, 243, 243, 1);
+  border: $border-width solid $card-border-color;
   border-radius: $border-radius;
   overflow: hidden;
   display: flex;
@@ -38,31 +38,31 @@
   &__image {
     width: 160px;
     height: 134px;
-    margin: 32px 19px 40px;
+    margin: 32px 19px $spacing-md;
   }
 
   &__content {
-    padding: 0 16px;
+    padding: 0 $spacing-sm;
   }
 
   &__title {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
     font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: $spacing-xs;
     color: $text-color;
   }
 
   .card:hover .card__title {
-    color: #34568b;
+    color: $hover-title-color;
   }
 
   &__code {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
     font-weight: 400;
     color: $muted-text-color;
-    margin-bottom: 16px;
+    margin-bottom: $spacing-sm;
   }
 
   &__stars-wrapper {
@@ -73,8 +73,8 @@
   }
 
   &__reviews {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
     font-weight: 400;
     color: $text-color;
     margin-left: 17px;
@@ -85,19 +85,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: $spacing-sm;
   }
 
   &__price-text {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
     font-weight: 400;
     color: $muted-text-color;
   }
 
   &__price {
     font-size: 16px;
-    line-height: 18px;
+    line-height: $line-height-md;
     font-weight: 700;
     color: $text-color;
   }

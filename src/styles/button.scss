@@ -6,16 +6,16 @@
   justify-content: center;
 
   background: $primary-color;
-  color: #fff;
-  font-size: 14px;
+  color: $background-color;
+  font-size: $font-size-lg;
   line-height: 16px;
   font-weight: 700;
-  border: 1px solid transparent;
+  border: $border-width solid transparent;
   border-radius: $border-radius;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: $spacing-sm;
   padding: 0;
 
   transition:
